@@ -11,7 +11,7 @@
 <body>
     <div id="app">
         <ul v-for="(email, index) in emailList" :key="index">
-            <li>{{email}}</li>
+            <li v-if="emailList.length === 10">{{email}}</li>
         </ul>
     </div>
 
